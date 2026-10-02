@@ -16,6 +16,7 @@ function Canvas() {
     // Charger la map
     const img = new Image();
     img.src = "/assets/maps/Map_monde_Arthur.jpg"; // image dans public/
+    img.src = "/assets/maps/Map_dongeon_Grotte.jpg"; // image dans public/
 
     img.onload = () => {
       // Ajuster le canvas à la taille de la map
