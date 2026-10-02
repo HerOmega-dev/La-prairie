@@ -1,6 +1,7 @@
 // Affichage d'une carte
 import { useEffect, useRef } from "react";
 import { carteRoyaume } from "../../data/carteRoyaume";
+import "./Map.css"
 
 function Canvas() {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -35,10 +36,7 @@ function Canvas() {
         ctx.arc(lieu.x, lieu.y, 8, 0, Math.PI * 2);
         ctx.fill();
 
-        // Nom du lieu
-        ctx.fillStyle = "white";
-        ctx.font = "14px Arial";
-        ctx.fillText(lieu.nom, lieu.x + 12, lieu.y - 12);
+        
       });
     };
   }, []);
@@ -47,7 +45,11 @@ function Canvas() {
     // Plus tard : drawPlayer(ctx)
     // Plus tard : animatePlayer()
 
-  return <canvas ref={ref} width={2048} height={1536} />;
+  return (
+    <div className="map-wrapper">
+        <canvas className="carte" ref={ref} width={2048} height={1536} />
+    </div>
+    );
 }
 
 export default Canvas

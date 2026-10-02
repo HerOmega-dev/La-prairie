@@ -1,0 +1,14 @@
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carte {
+  max-width: 100%;
+  height: auto;
+  background-color: #3E382B;
+  padding: 20px;
+  margin: 80px;
+}
