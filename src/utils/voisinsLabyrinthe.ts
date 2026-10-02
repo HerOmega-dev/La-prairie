@@ -1,4 +1,3 @@
-import { carteLabyrinthe } from "../data/carteLabyrinthe"
 import type { Labyrinthe } from "../types/graphe"
 
 export type Position = {
@@ -48,5 +47,3 @@ export function getVoisinsLabyrinthe(
 
   return voisins
 }
-
-console.log(getVoisinsLabyrinthe(carteLabyrinthe, 18, 4))
