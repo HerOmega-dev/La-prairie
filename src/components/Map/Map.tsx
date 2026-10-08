@@ -57,9 +57,7 @@ function Canvas()
     };
     
   }, []);
-    // Plus tard : drawMap(ctx)
-    // Plus tard : drawGraph(ctx)
-    // Plus tard : drawPlayer(ctx)
+  
     // Plus tard : animatePlayer()
 
   return (
